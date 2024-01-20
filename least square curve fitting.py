@@ -12,7 +12,6 @@ def linear_least_squares(x, y):
     sum_xy = np.sum(x * y)
     sum_x_squared = np.sum(x ** 2)
     b = (n * sum_xy - sum_x * sum_y) / (n * sum_x_squared - sum_x ** 2)
-    # b = (n * sum_xy - sum_y) / (n * sum_x_squared - sum_x)
     a = (sum_y - b * sum_x) / n
     return b, a
 

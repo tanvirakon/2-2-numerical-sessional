@@ -43,7 +43,7 @@ x = [1, 1.05, 1.10, 1.15, 1.20, 1.25, 1.30]
 y = [2.7183, 2.8577, 3.0042, 3.1582, 3.3201, 3.4903, 3.6693]
 # value of interpole
 xi = 1.17
-
+print(type(x))
 interpolated_value, difference_table = gauss_forward_difference(x, y, xi)
 
 print('Forward Diffenence Table:')
